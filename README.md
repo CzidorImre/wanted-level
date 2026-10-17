@@ -24,7 +24,7 @@ You need **Node 22**, **pnpm 10** and **Docker** (Docker Desktop, OrbStack or Co
 Nothing else: the Supabase CLI comes in as a dev dependency.
 
 ```bash
-git clone https://github.com/CzidorImre/Gta6-website.git wanted-level
+git clone https://github.com/CzidorImre/wanted-level.git
 cd wanted-level
 corepack enable            # provides the pnpm version pinned in package.json
 pnpm install
