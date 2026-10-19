@@ -61,11 +61,14 @@ Supabase Studio (database browser) is at http://127.0.0.1:54323.
 | `pnpm dev` | Next.js dev server |
 | `pnpm lint` / `pnpm typecheck` | ESLint (incl. jsx-a11y) / TypeScript |
 | `pnpm test` | unit tests (Vitest) |
+| `pnpm test:watch` | unit tests in watch mode |
 | `pnpm test:db` | database tests: RLS, functions, retention (`supabase test db`, pgTAP) |
 | `pnpm test:e2e` | end-to-end tests (Playwright; builds and starts the app, needs `pnpm supabase start`) |
 | `pnpm lighthouse` | mobile Lighthouse check (median of 3 runs) on the map, the list and an event page (app must be running) |
 | `pnpm db:reset` | re-create the local database from migrations + seed |
 | `pnpm db:types` | regenerate `src/lib/supabase/database.types.ts` after a migration |
+| `pnpm env:local` | write `.env.local` with the local Supabase URL and keys (needs `pnpm supabase start` first) |
+| `pnpm admin:code` | print the current TOTP code for `admin@wantedlevel.test` (local seed only) |
 | `pnpm supabase stop` | stop the local stack |
 
 First Playwright run on a new machine: `pnpm exec playwright install chromium`.
